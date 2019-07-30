@@ -27,6 +27,6 @@
 npm run dev  
 
 ## 预览
-<img width="150" height="150" src="images/image1.png"/>
+<img width="40%" height="700" src="images/image1.png"/>
 
 
