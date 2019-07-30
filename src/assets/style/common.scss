@@ -1,0 +1,181 @@
+// 基础间距
+$space: 10px;
+$space2: 20px;
+$space3: 30px;
+$color-primary:#eb1e1c;
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+address, cite, dfn, em, var {
+  font-style: normal;
+}
+
+small {
+  font-size: 12px;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+legend {
+  color: #000;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+button, input, select, textarea {
+  font-size: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+.row {
+  margin: $space * 2 0;
+}
+
+.round {
+  border-radius: $space;
+}
+
+.ml {
+  margin-left: $space;
+}
+
+.mr {
+  margin-right: $space;
+}
+
+.mb {
+  margin-bottom: $space;
+}
+
+.mt {
+  margin-top: $space;
+}
+
+.ml2 {
+  margin-left: $space2;
+}
+
+.mr2 {
+  margin-right: $space2;
+}
+
+.mb2 {
+  margin-bottom: $space2;
+}
+
+.mt2 {
+  margin-top: $space2;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.pd18 {
+  padding:0 18px;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.ft12{
+  font-size:12px;
+}
+.ft14{
+  font-size:14px;
+}
+.ft16{
+  font-size:16px;
+}
+.ft20{
+  font-size:20px;
+}
+.primary-title.large {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 24px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.primary-title::before {
+  content: '';
+  top: 50%;
+  left: 0.5em;
+  width: 4px;
+  height: 1.2em;
+  background-color: #dd0a19;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

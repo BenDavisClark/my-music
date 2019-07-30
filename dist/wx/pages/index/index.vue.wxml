@@ -1,0 +1,53 @@
+<import src="/pages/index/components/recommend-song.vue.wxml" />
+<import src="/pages/index/components/new-song.vue.wxml" />
+<import src="/pages/index/components/recommend-daily.vue.wxml" />
+<import src="/pages/index/components/song-search.vue.wxml" /><template name="048afc3f">
+  <view class="_div data-v-1e08d622 page-index">
+    <van-row class="_van-row data-v-1e08d622">
+      <van-tabs animated bindchange="handleProxy" active="{{active}}" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_van-tabs data-v-1e08d622">
+        <van-tab title="发现" class="_van-tab data-v-1e08d622">
+          <view class="_div data-v-1e08d622 mt">
+            <van-row class="_van-row data-v-1e08d622">
+              <swiper class="_swiper data-v-1e08d622 swiper" indicator-dots="true" autoplay="true" interval="2000" duration="1000">
+                <block wx:key="index" key="{{index}}" wx:for="{{imgUrls}}" wx:for-index="index" wx:for-item="item">
+                  <swiper-item class="_swiper-item data-v-1e08d622">
+                    <image src="{{item}}" class="_image data-v-1e08d622 slide-image" mode="widthFix"></image>
+                  </swiper-item>
+                </block>
+              </swiper>
+            </van-row>
+          </view>
+          <van-row class="_van-row data-v-1e08d622 pageRow mt" gutter="10">
+            <van-col span="6" class="_van-col data-v-1e08d622">
+              <van-icon name="youzan-shield" class="_van-icon data-v-1e08d622"></van-icon> <label class="_span data-v-1e08d622">每日推荐</label>
+            </van-col>
+            <van-col span="6" class="_van-col data-v-1e08d622">
+              <van-icon name="comment" class="_van-icon data-v-1e08d622"></van-icon> <label class="_span data-v-1e08d622">歌单</label>
+            </van-col>
+            <van-col span="6" class="_van-col data-v-1e08d622">
+              <van-icon name="point-gift" class="_van-icon data-v-1e08d622"></van-icon> <label class="_span data-v-1e08d622">排行榜</label>
+            </van-col>
+            <van-col span="6" class="_van-col data-v-1e08d622">
+              <van-icon name="diamond" class="_van-icon data-v-1e08d622"></van-icon> <label class="_span data-v-1e08d622">电台</label>
+            </van-col>
+          </van-row>
+          <view class="_hr data-v-1e08d622"></view> <template data="{{...$root[$kk+'11'], $root}}" is="f22197e8"></template> <template data="{{...$root[$kk+'12'], $root}}" is="fd7fb3b0"></template>
+        </van-tab>
+        <van-tab title="推荐" class="_van-tab data-v-1e08d622"><template data="{{...$root[$kk+'14'], $root}}" is="06a4cd9c"></template></van-tab>
+        <van-tab title="热歌榜" class="_van-tab data-v-1e08d622">
+          <view class="_div data-v-1e08d622 recommend-daily-hot">
+            <image src="cloud://dev-ev-hu-3r6iu.6465-dev-ev-hu-3r6iu/hotSong.jpeg" class="_img data-v-1e08d622"></image>
+            <van-row gutter="10" class="_van-row data-v-1e08d622">
+              <van-cell-group wx:key="item.id" key="{{item.id}}" wx:for="{{hotSong}}" wx:for-index="index" wx:for-item="item" class="_van-cell-group data-v-1e08d622">
+                <van-cell title="{{item.name}}" label="{{item.ar[0].name}}" border="false" class="_van-cell data-v-1e08d622">
+                  <van-icon slot="right-icon" name="play-circle-o" class="_van-icon data-v-1e08d622 custom-icon" size="20px" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}"></van-icon>
+                </van-cell>
+              </van-cell-group>
+            </van-row>
+          </view>
+        </van-tab>
+        <van-tab title="搜索" class="_van-tab data-v-1e08d622"><template data="{{...$root[$kk+'21'], $root}}" is="588aa9ca"></template></van-tab>
+      </van-tabs>
+    </van-row>
+  </view>
+</template>

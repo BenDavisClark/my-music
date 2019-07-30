@@ -1,0 +1,25 @@
+<template name="06a4cd9c">
+  <view class="_div data-v-4715db2f recommend-daily">
+    <view class="_div data-v-4715db2f recommend">
+      <van-row gutter="10" class="_van-row data-v-4715db2f">
+        <view class="_p data-v-4715db2f recommend-song">推荐歌单</view>
+        <van-col span="8" wx:key="item.id" key="{{item.id}}" wx:for="{{resultData}}" wx:for-index="index" wx:for-item="item" class="_van-col data-v-4715db2f">
+          <view class="_div data-v-4715db2f image-style">
+            <image src="{{item.picUrl}}" class="_img data-v-4715db2f"></image>
+          </view>
+          <view class="_p data-v-4715db2f song-name mb">{{ item.name }}</view>
+        </van-col>
+      </van-row>
+    </view>
+    <view class="_div data-v-4715db2f recommend-daily-new">
+      <van-row gutter="10" class="_van-row data-v-4715db2f">
+        <view class="_p data-v-4715db2f mt ">新歌速递</view>
+        <van-cell-group wx:key="item.id" key="{{item.id}}" wx:for="{{newData}}" wx:for-index="index" wx:for-item="item" class="_van-cell-group data-v-4715db2f">
+          <van-cell title="{{item.name}}" label="{{item.ar[0].name}}" border="false" class="_van-cell data-v-4715db2f">
+            <van-icon slot="right-icon" name="play-circle-o" class="_van-icon data-v-4715db2f custom-icon" size="20px" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}"></van-icon>
+          </van-cell>
+        </van-cell-group>
+      </van-row>
+    </view>
+  </view>
+</template>

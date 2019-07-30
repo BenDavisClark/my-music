@@ -1,0 +1,4 @@
+<import src="/pages/index/components/recommend-song.vue.wxml" />
+<import src="/pages/index/components/new-song.vue.wxml" />
+<import src="/pages/index/components/recommend-daily.vue.wxml" />
+<import src="/pages/index/components/song-search.vue.wxml" />

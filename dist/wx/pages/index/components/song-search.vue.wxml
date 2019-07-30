@@ -1,0 +1,31 @@
+<template name="588aa9ca">
+  <view class="_div data-v-82951b72 song-search">
+    <van-row class="_van-row data-v-82951b72">
+      <view class="_div data-v-82951b72 search-box mb"><input value="{{keywords}}" bindinput="handleProxy" bindfocus="handleProxy" bindblur="handleProxy" placeholder="搜索歌曲" class="_input data-v-82951b72 search-input" data-eventid="{{'0'}}" data-comkey="{{$k}}" /></view>
+    </van-row>
+    <view class="_div data-v-82951b72 search-suggest pd18" wx:if="{{suggestsVisible && keywords && suggestList.length}}">
+      <view class="_div data-v-82951b72 search-keyword" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">搜索"{{ keywords }}"</view>
+      <view class="_div data-v-82951b72 suggest-item pd18" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'2_'+index}}" data-comkey="{{$k}}" wx:for="{{suggestList}}" wx:for-index="index" wx:for-item="item">
+        {{ item.keyword }}
+      </view>
+    </view>
+    <van-row class="_van-row data-v-82951b72">
+      <view class="_div data-v-82951b72 hotSearch" wx:if="{{!playlist.length}}">
+        <van-row class="_van-row data-v-82951b72">
+          <view class="_p data-v-82951b72 mb">热门搜索</view>
+          <van-tag color="#f2826a" size="large" plain="true" bindtap="handleProxy" wx:key="item.id" key="{{item.id}}" data-eventid="{{'3_'+index}}" data-comkey="{{$k}}" wx:for="{{hotSearch}}" wx:for-index="index" wx:for-item="item" class="_van-tag data-v-82951b72">{{ item.first }}
+          </van-tag>
+        </van-row>
+      </view>
+    </van-row>
+    <van-row class="_van-row data-v-82951b72">
+      <view class="_div data-v-82951b72 play-list pd18" wx:if="{{playlist.length}}">
+        <van-cell-group wx:key="item.id" key="{{item.id}}" wx:for="{{playlist}}" wx:for-index="index" wx:for-item="item" class="_van-cell-group data-v-82951b72"><label class="_span data-v-82951b72 play-list-index">{{ index+1 }}</label>
+          <van-cell title="{{item.name}}" label="{{item.artists[0].name}}" border="false" class="_van-cell data-v-82951b72">
+            <van-icon slot="right-icon" name="play-circle-o" class="_van-icon data-v-82951b72 custom-icon" size="20px" bindtap="handleProxy" data-eventid="{{'4_'+index}}" data-comkey="{{$k}}"></van-icon>
+          </van-cell>
+        </van-cell-group>
+      </view>
+    </van-row>
+  </view>
+</template>
