@@ -2,8 +2,8 @@
 [github](https://github.com/a758801405/my-music) 地址
 
 ## 技术架构
-- mpvue 初始化项目  
-- UI框架:vantUI
+- [mpvue](http://mpvue.com/mpvue/quickstart.html)   初始化项目
+- UI框架:[vant Weapp](https://youzan.github.io/vant-weapp/#/icon) 
 - HTTP请求:[flyio](https://wendux.github.io/dist/#/doc/flyio/readme)
 - css预处理器:sass
 - 微信小程序[api](https://developers.weixin.qq.com/miniprogram/dev/api/)
@@ -19,7 +19,7 @@
 搜索  
 播放  
 
-### 未实现  
+### 待实现  
 我的  
 账号  
 
@@ -27,6 +27,7 @@
 npm run dev  
 
 ##预览
+![首页](./assets/image/image1.png '首页')
 
 
 
