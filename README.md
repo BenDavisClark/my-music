@@ -4,7 +4,7 @@
 ## 技术架构
 - [mpvue](http://mpvue.com/mpvue/quickstart.html)   初始化项目
 - UI框架:[vant Weapp](https://youzan.github.io/vant-weapp/#/icon)
-- HTTP请求:[flyio](https://wendux.github.io/dist/#/doc/flyio/readme)
+- HTTP请求:[flyio](https://wendux.github.io/dist/#/doc/flyio/readme) 和 自己封装的微信请求
 - css预处理器:sass
 - 微信小程序[api](https://developers.weixin.qq.com/miniprogram/dev/api/)
 
