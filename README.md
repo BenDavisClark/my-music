@@ -1,37 +1,24 @@
-# my-project
+# 微信小程序版网易云音乐 练手demo
+[github](https://github.com/a758801405/my-music) 地址
 
-> A Mpvue project
+## 技术架构
+- 用的mpvue 初始化项目  
+- UI框架用的是vantUI
+- HTTP请求，用的[flyio](https://wendux.github.io/dist/#/doc/flyio/readme)
+- css预处理器 用的sass
+- 微信小程序[api](https://developers.weixin.qq.com/miniprogram/dev/api/)
 
-## Build Setup
+## 主要功能和模块
+###已实现  
+首页
+新歌榜
+热歌榜
+搜索
 
-``` bash
-# 初始化项目
-vue init mpvue/mpvue-quickstart myproject
-cd myproject
+###未实现  
+我的
+账号
 
-# 安装依赖
-yarn
 
-# 开发时构建
-npm dev
 
-# 打包构建
-npm build
 
-# 指定平台的开发时构建(微信、百度、头条、支付宝)
-npm dev:wx
-npm dev:swan
-npm dev:tt
-npm dev:my
-
-# 指定平台的打包构建
-npm build:wx
-npm build:swan
-npm build:tt
-npm build:my
-
-# 生成 bundle 分析报告
-npm run build --report
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
