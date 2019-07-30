@@ -27,7 +27,7 @@
 npm run dev  
 
 ##预览
-![首页](https://github.com/a758801405/my-music/src/assets/image/image1.png)
+![首页](images/image1.png)
 
 
 
