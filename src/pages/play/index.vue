@@ -83,7 +83,8 @@ export default {
       async createAudioCtx() {
         const responseArr = await Promise.all([
           this.$request.get({url:`/song/url?id=${this.songId}`}),
-          this.$http.get(`/cloudmusic/?type=lyric&id=${this.songId}`)
+          this.$request.get({url:`/lyric?id=${this.songId}`}),
+          //this.$http.get(`/cloudmusic/?type=lyric&id=${this.songId}`)
         ])
 
         console.log(responseArr)
