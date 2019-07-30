@@ -83,7 +83,7 @@
   import NewSong from './components/new-song'
   import RecommendDaily from './components/recommend-daily'
   import SongSearch from './components/song-search'
-  import {mapMutations} from 'vuex'
+  import { mapMutations } from 'vuex'
 
   export default {
     components: {
@@ -112,7 +112,7 @@
     },
 
     methods: {
-      ...mapMutations({
+       ...mapMutations({
         setSongInfo: 'setSongInfo'
       }),
       // 初始化数据

@@ -1,6 +1,6 @@
 //定义请求地址
-const host = 'http://neteasecloudmusicapi.zhaoboy.com';
-//const host = 'https://binaryify.github.io/NeteaseCloudMusicApi/#/'
+//const host = 'http://neteasecloudmusicapi.zhaoboy.com';
+const host = 'https://music.aityp.com'
 
 function request(url, method, data) {
   return new Promise((resolve, reject) => {
