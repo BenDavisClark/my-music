@@ -4,7 +4,7 @@
 ## 技术架构
 - [mpvue](http://mpvue.com/mpvue/quickstart.html)   初始化项目
 - UI框架:[vant Weapp](https://youzan.github.io/vant-weapp/#/icon)
-- HTTP请求:[flyio](https://wendux.github.io/dist/#/doc/flyio/readme) 和 自己封装的微信请求
+- HTTP请求:[flyio](https://wendux.github.io/dist/#/doc/flyio/readme)
 - css预处理器:sass
 - 微信小程序[api](https://developers.weixin.qq.com/miniprogram/dev/api/)
 
@@ -29,12 +29,12 @@ npm run dev
 ## 预览
 <div style='display:flex;flex-wrap:wrap;'>
 <img width="45%" height="700" src="images/image1.png"/>
-&nbsp;&nbsp;
 <img width="45%" height="700" src="images/image2.png"/>
 <img width="45%" height="700" src="images/image3.png"/>
-&nbsp;&nbsp;
 <img width="45%" height="700" src="images/image4.png"/>
 <img width="45%" height="700" src="images/image5.png"/>
+<img width="45%" height="700" src="images/image6.png"/>
+<img width="45%" height="700" src="images/image7.png"/>
 <div>
 
 
