@@ -27,8 +27,6 @@
 npm run dev  
 
 ## 预览
-<img width="150" height="150" src="https://img-blog.csdn.net/20161028230559575"/>
-
-
+<img width="150" height="150" src="images/image1.png"/>
 
 
