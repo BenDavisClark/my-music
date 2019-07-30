@@ -26,8 +26,8 @@
 ## 构建命令
 npm run dev  
 
-##预览
-![首页](images/image1.png)
+## 预览
+![首页](<img width="370" height="690" src="images/image1.png"/>)
 
 
 
