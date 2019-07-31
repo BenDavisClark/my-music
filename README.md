@@ -2,7 +2,7 @@
 [github](https://github.com/a758801405/my-music) 地址
 
 ## 技术架构
-- [mpvue] (http://mpvue.com/mpvue/quickstart.html)   初始化项目
+- mpvue 初始化项目
 - UI框架：[vant Weapp](https://youzan.github.io/vant-weapp/#/icon)
 - HTTP请求：[flyio](https://wendux.github.io/dist/#/doc/flyio/readme) 和自己封装的请求
 - css预处理器：sass
