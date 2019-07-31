@@ -31,7 +31,7 @@ npm run dev
 
 ## 预览
 <center class="half">
-    <img src="images/image1.png" height="700"/><img src="images/image2.png" height="700"/>
+    <img src="images/image1.png" width="350" height="700"/><img src="images/image2.png" width="350" height="700"/>
 </center>
 
 
