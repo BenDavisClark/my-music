@@ -30,14 +30,8 @@
 npm run dev
 
 ## 预览
-<div style='display:flex;flex-wrap:wrap;'>
-<img width="45%" height="700" src="images/image1.png"/>
-<img width="45%" height="700" src="images/image2.png"/>
-<img width="45%" height="700" src="images/image3.png"/>
-<img width="45%" height="700" src="images/image4.png"/>
-<img width="45%" height="700" src="images/image5.png"/>
-<img width="45%" height="700" src="images/image6.png"/>
-<img width="45%" height="700" src="images/image7.png"/>
-<div>
+<center class="half">
+    <img src="images/image1.png" height="700"/><img src="images/image2.png" height="700"/>
+</center>
 
 
