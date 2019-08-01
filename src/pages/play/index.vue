@@ -54,11 +54,11 @@ export default {
     name:'play-index',
     data () {
       return {
-        songId: null,
-        songDetail:null,
-        lyricVisible:false,
-        lyric: null,
-        isPlaying: false,
+        songId: null, //歌曲id
+        songDetail:null, //歌曲详情
+        lyricVisible:false, //显示歌词
+        lyric: null, //歌词内容
+        isPlaying: false, //是否播放
         lyricCurrentLine: 0,
         lyricTop:0,
         playProgress: 0,
@@ -81,13 +81,12 @@ export default {
     methods: {
       // 创建音频
       async createAudioCtx() {
+        let that = this
         const responseArr = await Promise.all([
           this.$request.get({url:`/song/url?id=${this.songId}`}),
           //this.$request.get({url:`/lyric?id=${this.songId}`}),
           this.$http.get(`/cloudmusic/?type=lyric&id=${this.songId}`)
         ])
-
-        console.log(responseArr)
 
         this.songUrl = responseArr[0].data[0].url
 
@@ -96,17 +95,13 @@ export default {
         } else {
           const lyricStr = responseArr[1].data.lrc.lyric
           this.lyric = new Lyric(lyricStr, this.handleLyric)
-          console.log(this.lyric)
         }
 
         this.innerAudioContext = wx.createInnerAudioContext()  // 创建内部 audio 上下文 InnerAudioContext 对象
 
-        this.innerAudioContext.autoplay = true
+        this.innerAudioContext.autoplay = false
         this.innerAudioContext.src = this.songUrl
-        console.log(this.innerAudioContext.src)
         this.innerAudioContext.onPlay(() => {
-          console.log('开始播放')
-          console.log("innerAudioContext",this.innerAudioContext)
           this.playProgress = this.innerAudioContext.currentTime / this.innerAudioContext.duration
           this.currentTime = this.formatTime(this.innerAudioContext.currentTime)
           this.duration = this.formatTime(this.innerAudioContext.duration)
@@ -127,20 +122,19 @@ export default {
           this.isPlaying = false
           this.lyric.stop()
           setTimeout(() => {
-            this.togglePlay()
-            this.lyric.seek(0)
+            that.togglePlay()
+            that.lyric.seek(0)
           }, 1000)
         })
         this.innerAudioContext.onError((res) => {
-          console.log(res.errMsg)
-          console.log(res.errCode)
+          Toast.fail(res.errMsg);
         })
         this.togglePlay()
       },
 
       getProgressRect() {
-        const query = wx.createSelectorQuery()
-        query.select('.bar-bg').boundingClientRect()
+        const query = wx.createSelectorQuery() //创建节点查询器 query
+        query.select('.bar-bg').boundingClientRect()  //选择class=bar-bg的节点
         query.exec((res) => {
           if (res.length) {
             this.progressRect = res[0]
@@ -156,9 +150,9 @@ export default {
           this.innerAudioContext.play()
         }
         this.isPlaying = !this.isPlaying
-        if (!this.nolyric) {
-          this.lyric.togglePlay()
-        }
+        // if (!this.nolyric) {
+        //   this.lyric.togglePlay()
+        // }
       },
 
       /**
