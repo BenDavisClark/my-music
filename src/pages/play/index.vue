@@ -4,7 +4,7 @@
       </div>
 
       <div class="song-warp mt2">
-          <p class="ft16 song-name">{{ songDetail.al.name }}</p>
+          <p class="ft16 song-name">{{ songDetail.name }}</p>
           <p class="ft12 song-name">{{ songDetail.ar[0].name }}</p>
           <hr class="mt" style="color:#fff;"/>
           <div class="song-inner" @click="toggleLyricVisible">
@@ -71,9 +71,11 @@ export default {
       }
     },
     onLoad(option) {
+      console.log(11111111)
       this.songId = option.id
     },
     mounted() {
+      console.log(222222)
       this.getSongDetail()
       this.createAudioCtx()
       this.getProgressRect()
@@ -209,6 +211,7 @@ export default {
         this.$request.get({
           url: `/song/detail?ids=${this.songId}`,
         }).then(res => {
+          console.log(res)
           this.songDetail = res.songs[0]
         })
       }
@@ -275,8 +278,8 @@ export default {
       .song-inner {
         position: relative;
         margin-top: 30px;
-        height: calc(100% - 30px);
-        overflow: hidden;
+        height: calc(100% - 50px);
+        overflow: auto;
       }
     }
     .song-name {

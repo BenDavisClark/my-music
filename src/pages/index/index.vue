@@ -160,6 +160,7 @@
       },
       handlePlay(data) {
         this.setSongInfo(data)
+        wx.navigateTo({ url: `/pages/play/main?id=${data.id}` })
       }
     },
     created() {
