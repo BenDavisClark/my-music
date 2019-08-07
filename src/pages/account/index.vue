@@ -46,7 +46,6 @@
         this.showComponent = 2
       },
       jumpSuccess(data) {
-        console.log(data)
         this.accountData = data
         this.showComponent = 3
       },

@@ -71,11 +71,9 @@ export default {
       }
     },
     onLoad(option) {
-      console.log(11111111)
       this.songId = option.id
     },
     mounted() {
-      console.log(222222)
       this.getSongDetail()
       this.createAudioCtx()
       this.getProgressRect()
@@ -211,7 +209,6 @@ export default {
         this.$request.get({
           url: `/song/detail?ids=${this.songId}`,
         }).then(res => {
-          console.log(res)
           this.songDetail = res.songs[0]
         })
       }

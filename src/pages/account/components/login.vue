@@ -34,6 +34,7 @@
 
 <script>
   import Toast from '../../../../static/vant/toast/toast'
+  import { mapMutations } from 'vuex'
   export default {
     name: "login",
     data() {
@@ -43,6 +44,9 @@
       }
     },
     methods: {
+      ...mapMutations({
+        setUserInfo: 'setUserInfo'
+      }),
       changeUserName(event){
         this.username = event.mp.detail
       },
@@ -54,9 +58,8 @@
         this.$request.get({
           url: `/login/cellphone?phone=${this.username}&password=${this.password}`,
         }).then(res => {
-          console.log(res)
           if(res.code === 200){
-            Toast.success('登录成功')
+            this.setUserInfo(res.profile)
             this.$emit('jumpSuccess',res.profile)
           }else{
             Toast.fail(res.msg)

@@ -50,7 +50,6 @@
         setSongInfo: 'setSongInfo'
       }),
       handlePlay(data) {
-        console.log(data)
         this.setSongInfo(data)
         wx.navigateTo({ url: `/pages/play/main?id=${data.id}` })
       }
