@@ -7,6 +7,7 @@
 - HTTP请求：[flyio](https://wendux.github.io/dist/#/doc/flyio/readme) 和自己封装的请求
 - css预处理器：sass
 - 微信小程序[api](https://developers.weixin.qq.com/miniprogram/dev/api/)
+- 网易云音乐[api](https://binaryify.github.io/NeteaseCloudMusicApi/)
 
 ## 主要功能和模块
 ### 已实现
