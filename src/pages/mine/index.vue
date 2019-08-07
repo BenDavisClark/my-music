@@ -6,7 +6,7 @@
 
 <script>
   export default {
-    name:'play-index'
+    name:'mine-index'
   }
 </script>
 

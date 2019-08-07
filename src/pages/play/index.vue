@@ -129,7 +129,7 @@ export default {
           }, 1000)
         })
         this.innerAudioContext.onError((res) => {
-          Toast.fail(res.errMsg);
+          vant.Toast.fail(res.errMsg);
         })
         this.togglePlay()
       },
