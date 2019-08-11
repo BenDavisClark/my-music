@@ -2,7 +2,7 @@
     <div class="mine-index">
         <div class="pd18">
           <van-row gutter="10">
-            <p class="ft16 primary-title mb" style="padding-left:8px;">
+            <p class="ft16 mb" style="padding-left:8px;">
               我的关注
             </p>
             <template v-if="userSongs.length">
@@ -20,7 +20,7 @@
           </van-row>
         </div>
         <van-row>
-          <p class="ft16 pd18 primary-title mt mb">
+          <p class="ft16 pd18 mt mb">
             播放记录
           </p>
           <template v-if="playRecord.length">
