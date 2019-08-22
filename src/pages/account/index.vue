@@ -2,7 +2,7 @@
   <div>
     <div class="account-cloud" v-if="showComponent === 1">
         <div class="account-cloud-div">
-          <img src="cloud://dev-ev-hu-3r6iu.6465-dev-ev-hu-3r6iu/logo.png" class="account-cloud-logo"/>
+          <img src="cloud://dev-hu-gd3p3.6465-dev-hu-gd3p3/logo.png" class="account-cloud-logo"/>
         </div>
 
         <div class="login-btn">

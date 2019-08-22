@@ -56,7 +56,7 @@
 
         <van-tab title="热歌榜">
           <div class="recommend-daily-hot">
-            <img src="cloud://dev-ev-hu-3r6iu.6465-dev-ev-hu-3r6iu/hotSong.jpeg"/>
+            <img src="cloud://dev-hu-gd3p3.6465-dev-hu-gd3p3/hotSong.jpeg"/>
             <van-row gutter="10">
               <van-cell-group v-for="item in hotSong" :key="item.id">
                 <van-cell :title="item.name" :label="item.ar[0].name" border="false">
@@ -104,9 +104,9 @@
         albumList: [], // 新碟
         hotSong: [], // 热歌榜
         imgUrls: [
-          'cloud://dev-ev-hu-3r6iu.6465-dev-ev-hu-3r6iu/star1.jpg',
-          'cloud://dev-ev-hu-3r6iu.6465-dev-ev-hu-3r6iu/star2.jpg',
-          'cloud://dev-ev-hu-3r6iu.6465-dev-ev-hu-3r6iu/star3.jpg'
+          'cloud://dev-hu-gd3p3.6465-dev-hu-gd3p3/star1.jpg',
+          'cloud://dev-hu-gd3p3.6465-dev-hu-gd3p3/star2.jpg',
+          'cloud://dev-hu-gd3p3.6465-dev-hu-gd3p3/star3.jpg'
         ]
       }
     },
