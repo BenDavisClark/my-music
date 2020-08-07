@@ -1,4 +1,4 @@
-# 微信小程序版网易云音乐 练手demo
+# 微信小程序版网易云音乐
 [github](https://github.com/a758801405/my-music) 地址
 
 ## 技术架构
